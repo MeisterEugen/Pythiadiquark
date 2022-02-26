@@ -21,7 +21,7 @@ wdi = (TH1D*)input3->Get("h_proton_pt");
 wdi->SetName("wdi");
 TFile *input4 = new TFile("pp_baryons/pp_pip_odi_1234.root");
 
-odi = (TH1D*)->Get("h_proton_pt");
+odi = (TH1D*)input4->Get("h_proton_pt");
 odi->SetName("odi");
 TFile *output = new TFile ("hists.root", "RECREATE");
 soft->Write();
